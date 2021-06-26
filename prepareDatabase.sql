@@ -3,55 +3,136 @@ INSERT INTO doctors(id, first_name, last_name, price, room, specialisation, visi
 INSERT INTO doctors(id, first_name, last_name, price, room, specialisation, visit_days, visit_hour_start, visit_hour_stop) VALUES
 (2, 'Maciej', 'Czarny', 200, 7, 'chirurg','2,4', '16:00:00', '20:00:00');
 
+    INSERT INTO `visits` VALUES (20,'2021-06-21 15:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (21,'2021-06-21 16:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (22,'2021-06-21 16:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (23,'2021-06-21 17:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (24,'2021-06-21 17:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (25,'2021-06-21 18:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (26,'2021-06-21 18:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (27,'2021-06-21 18:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (28,'2021-06-21 18:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (29,'2021-06-22 14:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (30,'2021-06-22 14:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (31,'2021-06-22 15:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (32,'2021-06-22 15:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (33,'2021-06-22 16:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (34,'2021-06-22 16:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (35,'2021-06-22 17:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (36,'2021-06-22 17:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (37,'2021-06-23 14:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (38,'2021-06-23 14:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (39,'2021-06-23 15:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (40,'2021-06-23 15:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (41,'2021-06-23 16:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (42,'2021-06-23 16:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (43,'2021-06-23 17:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (44,'2021-06-23 17:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (46,'2021-06-23 14:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (47,'2021-06-23 14:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (48,'2021-06-23 15:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (49,'2021-06-23 15:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (50,'2021-06-23 16:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (51,'2021-06-23 16:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (52,'2021-06-23 17:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (53,'2021-06-23 17:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (54,'2021-06-25 14:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (55,'2021-06-25 14:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (56,'2021-06-25 15:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (57,'2021-06-25 15:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (58,'2021-06-25 16:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (59,'2021-06-25 16:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (60,'2021-06-25 17:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (61,'2021-06-25 17:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (62,'2021-06-25 16:00:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (63,'2021-06-25 16:30:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (64,'2021-06-25 17:00:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (65,'2021-06-25 17:30:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (66,'2021-06-25 18:00:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (67,'2021-06-25 18:30:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (68,'2021-06-25 19:00:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (69,'2021-06-25 19:30:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (70,'2021-06-25 14:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (71,'2021-06-25 14:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (72,'2021-06-25 15:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (73,'2021-06-25 15:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (74,'2021-06-25 16:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (75,'2021-06-25 16:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (76,'2021-06-25 17:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (77,'2021-06-25 17:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (78,'2021-06-25 16:00:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (79,'2021-06-25 16:30:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (80,'2021-06-25 17:00:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (81,'2021-06-25 17:30:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (82,'2021-06-25 18:00:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (83,'2021-06-25 18:30:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (84,'2021-06-25 19:00:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (85,'2021-06-25 19:30:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (86,'2021-06-28 14:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (87,'2021-06-28 14:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (88,'2021-06-28 15:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (89,'2021-06-28 15:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (90,'2021-06-28 16:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (91,'2021-06-28 16:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (92,'2021-06-28 17:00:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (93,'2021-06-28 17:30:00.000000',1,NULL);
+    INSERT INTO `visits` VALUES (94,'2021-06-28 16:00:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (95,'2021-06-28 16:30:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (96,'2021-06-28 17:00:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (97,'2021-06-28 17:30:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (98,'2021-06-28 18:00:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (99,'2021-06-28 18:30:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (100,'2021-06-28 19:00:00.000000',2,NULL);
+    INSERT INTO `visits` VALUES (101,'2021-06-28 19:30:00.000000',2,NULL);
 
-DELIMITER $$
+    DELIMITER $$
 
-CREATE PROCEDURE InsertVisits(doctor INT)
-BEGIN
-	SELECT visit_days, visit_hour_start, visit_hour_stop INTO @days, @start_visit, @stop_visit FROM doctors WHERE id=doctor;
-	SELECT CONCAT(DATE_ADD(DATE_FORMAT(NOW(), '%Y-%m-%d'), INTERVAL 1 day), ' ', @start_visit) INTO @start_visit_date;
-	SELECT  CONCAT(DATE_ADD(DATE_FORMAT(NOW(), '%Y-%m-%d'), INTERVAL 1 day), ' ', @stop_visit) INTO @stop_visit_date;
-	SELECT @start_visit_date INTO @hour_iter;
+    CREATE PROCEDURE InsertVisits(doctor INT)
+    BEGIN
+    	SELECT visit_days, visit_hour_start, visit_hour_stop INTO @days, @start_visit, @stop_visit FROM doctors WHERE id=doctor;
+    	SELECT CONCAT(DATE_ADD(DATE_FORMAT(NOW(), '%Y-%m-%d'), INTERVAL 1 day), ' ', @start_visit) INTO @start_visit_date;
+    	SELECT  CONCAT(DATE_ADD(DATE_FORMAT(NOW(), '%Y-%m-%d'), INTERVAL 1 day), ' ', @stop_visit) INTO @stop_visit_date;
+    	SELECT @start_visit_date INTO @hour_iter;
 
- 	 insert_loop: WHILE @hour_iter < @stop_visit_date DO
- 		IF FIND_IN_SET(WEEKDAY(@start_visit_date), @days) THEN
-			INSERT INTO visits(fk_doctor_id, fk_user_id, date_time) VALUES (doctor, NULL, @hour_iter);
-			SELECT DATE_ADD(@hour_iter, INTERVAL 30 minute) INTO @hour_iter;
-		ELSE
-			LEAVE insert_loop;
-		END IF;
-	END WHILE;
-END$$
+     	 insert_loop: WHILE @hour_iter < @stop_visit_date DO
+     		IF FIND_IN_SET(WEEKDAY(@start_visit_date), @days) THEN
+    			INSERT INTO visits(fk_doctor_id, fk_user_id, date_time) VALUES (doctor, NULL, @hour_iter);
+    			SELECT DATE_ADD(@hour_iter, INTERVAL 30 minute) INTO @hour_iter;
+    		ELSE
+    			LEAVE insert_loop;
+    		END IF;
+    	END WHILE;
+    END$$
 
-DELIMITER ;
+    DELIMITER ;
 
-DELIMITER $$
+    DELIMITER $$
 
-CREATE PROCEDURE createVisits() BEGIN
-  DECLARE done BOOLEAN DEFAULT FALSE;
-  DECLARE _id BIGINT UNSIGNED;
-  DECLARE cur CURSOR FOR SELECT id FROM doctors;
-  DECLARE CONTINUE HANDLER FOR NOT FOUND SET done := TRUE;
+    CREATE PROCEDURE createVisits() BEGIN
+      DECLARE done BOOLEAN DEFAULT FALSE;
+      DECLARE _id BIGINT UNSIGNED;
+      DECLARE cur CURSOR FOR SELECT id FROM doctors;
+      DECLARE CONTINUE HANDLER FOR NOT FOUND SET done := TRUE;
 
-  OPEN cur;
+      OPEN cur;
 
-  doctors_loop: LOOP
-    FETCH cur INTO _id;
-    IF done THEN
-      LEAVE doctors_loop;
-    END IF;
-    CALL InsertVisits(_id);
-  END LOOP doctors_loop;
+      doctors_loop: LOOP
+        FETCH cur INTO _id;
+        IF done THEN
+          LEAVE doctors_loop;
+        END IF;
+        CALL InsertVisits(_id);
+      END LOOP doctors_loop;
 
-  CLOSE cur;
-END$$
+      CLOSE cur;
+    END$$
 
-DELIMITER ;
+    DELIMITER ;
 
-CALL createVisits();
+    CALL createVisits();
 
-CREATE EVENT visits
-ON SCHEDULE EVERY 1 DAY
-STARTS '2021-06-19 14:47:00'
-DO
-	CALL createVisits()
+    CREATE EVENT visits
+    ON SCHEDULE EVERY 1 DAY
+    STARTS '2021-06-28 16:47:00'
+    DO
+    	CALL createVisits();
