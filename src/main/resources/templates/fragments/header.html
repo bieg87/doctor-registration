@@ -1,0 +1,29 @@
+<div class="container" th:fragment="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Przychodnia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="'/doctorselect'">Zapisz się na wizytę</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="'/opinions'">Opinie o lekarzach</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="'/visit/user/' + ${#request.userPrincipal.principal.id}">Twoje zaplanowane wizyty</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <form class="form-inline d-flex flex-row" th:action="@{/logout}" method="post">
+                        <div class="p-2">Zalogowany jako: <b>[[${#request.userPrincipal.principal.fullName}]]</b></div>
+                        <div class="p-2"><button class="btn btn-primary" type="submit">Wyloguj się</button></div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

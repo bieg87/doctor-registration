@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/skeleton}"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      lang="pl">
+<div layout:fragment="content">
+    <h1 class="text-center mt-3">
+        Lista opinii o lekarzach wystawionych przez pacjentów
+    </h1>
+    <a class="btn btn-lg btn-primary" th:href="'/opinions/add'">Wystaw opinię o lekarzu</a>
+    <div class="row mt-4">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Doktor</th>
+                    <th>Pacjent</th>
+                    <th>Opinia</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="op : ${listOpinions}">
+                    <td th:text="${op.doctor.firstName + ' ' + op.doctor.lastName}">Doktor</td>
+                    <td th:text="${op.patient.firstName + ' ' + op.patient.lastName}">Pacjent</td>
+                    <td th:text="${op.opinionText}">Opinia</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</html>

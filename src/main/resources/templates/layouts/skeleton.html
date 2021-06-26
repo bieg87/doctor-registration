@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.w3.org/1999/xhtml"
+      lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Przychodnia</title>
+    <link th:rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}"/>
+    <script type="application/javascript" th:src="@{/webjars/jquery/3.4.1/jquery.min.js/}"></script>
+    <script type="application/javascript" th:src="@{/webjars/bootstrap/4.3.1/js/bootstrap.min.js}"></script>
+</head>
+<body class="d-flex flex-column h-100">
+
+<div th:replace="fragments/header :: header"> </div>
+
+<div class="container">
+    <div layout:fragment="content"></div>
+</div>
+
+<div th:replace="fragments/footer :: footer"> </div>
+
+</body>
+</html>

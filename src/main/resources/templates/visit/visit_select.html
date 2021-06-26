@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/skeleton}"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      lang="pl">
+<div layout:fragment="content">
+    <br /><br />
+    <p class="text-center">
+         <br /><br />
+        Wybierz datę wizyty:
+    </p>
+    <form action="#" th:action="@{'/visit?doctorid=' + ${doctorId}}" method="post">
+        <p>Date: <input type="text" id="datepicker" name="date"></p>
+        <input type="submit" class="btn btn-sm btn-primary" value="Wyświetl terminy" />
+    </form>
+    <div class="row mt-4">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Data</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="visit : ${listVisits}">
+                    <td th:text="${#temporals.format(visit.dateTime, 'yyyy-MM-dd HH:mm')}">Data</td>
+                    <td>
+                        <a class="btn btn-sm btn-primary" th:href="@{'/visit/edit/' + ${visit.id}}" th:if="${visit.patient == null}">Zapisz się</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script>
+    $(document).ready(function(){
+          $("#datepicker").datepicker({
+          dateFormat: 'yy-mm-dd',
+          changeMonth:true,
+          changeYear:true
+          });
+    });
+    </script>
+</div>
+
+</html>

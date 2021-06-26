@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/skeleton}"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      lang="pl">
+<div layout:fragment="content">
+    <h1 class="text-center mt-3">Potwierdzenie wizyty</h1>
+    <hr/>
+    <div class="row mt-1">
+        <div class="col-12">
+
+            <form action="#" th:action="@{/visit/save}" method="post" th:object="${visit}">
+
+                <div class="form-group">
+                    <input class="form-control" type="hidden" th:name="id" th:value="${id}" id="visit-id"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="doctor">Lekarz</label>
+                    <input class="form-control" type="text" id="doctor" th:value="*{doctor.firstName + ' ' + doctor.lastName + ' ' + doctor.specialisation}" disabled/>
+                </div>
+
+                <div class="form-group">
+                    <input class="form-control" type="hidden" id="doctor_id" th:name="doctor" th:value="*{doctor.id}"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="data">Data</label>
+                    <input class="form-control" type="text" th:name="dateTime" th:value="*{dateTime}" id="data" readonly="readonly" />
+                </div>
+
+                <div class="form-group">
+                    <input class="form-control" type="hidden" th:name="patient" id="patient" th:value="${#request.userPrincipal.principal.id}"  />
+                </div>
+
+                <button type="submit" class="btn btn-primary mb-2 text-right">
+                    Potwierdź wizytę
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+</html>

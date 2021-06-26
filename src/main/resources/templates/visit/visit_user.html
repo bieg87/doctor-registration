@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/skeleton}"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      lang="pl">
+<div layout:fragment="content">
+    <h1 class="text-center mt-3">Twoje zapisane wizyty</h1>
+    <br /><br />
+    <div class="row mt-4">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Lekarz</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="visit : ${listVisits}">
+                    <td th:text="${#temporals.format(visit.dateTime, 'yyyy-MM-dd HH:mm')}">Data</td>
+                    <td th:text="${visit.doctor.firstName + ' ' + visit.doctor.lastName + ' ' + visit.doctor.specialisation}">Lekarz</td>
+                    <td>
+                        <a class="btn btn-sm btn-secondary" th:href="@{'/visit/delete/' + ${visit.id}}">Usuń wizytę</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</html>

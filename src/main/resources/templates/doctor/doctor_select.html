@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/skeleton}"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      lang="pl">
+
+<div layout:fragment="content">
+    <div class="container">
+        <br /><br />
+        <h1 class="text-center mt-3">
+            Zapisz się na wizytę u lekarza specjalisty. <br />
+            Wybierz lekarza:
+        </h1>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Imię</th>
+                        <th>Nazwisko</th>
+                        <th>Specializacja</th>
+                        <th>Cena</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="doctor : ${listDoctors}">
+                        <td th:text="${doctor.id}">Id</td>
+                        <td th:text="${doctor.firstName}">Imię</td>
+                        <td th:text="${doctor.lastName}">Nazwisko</td>
+                        <td th:text="${doctor.specialisation}">Specializacja</td>
+                        <td th:text="${doctor.price}">Cena</td>
+                        <td>
+                            <a class="btn btn-sm btn-secondary" th:href="@{'/visit?doctorid=' + ${doctor.id}}">Wybierz</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>
